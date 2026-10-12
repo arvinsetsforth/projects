@@ -1,0 +1,212 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 60px;
+  margin-left: 50%;
+}
+
+header  nav  * {
+  float: left;
+  width: 10%;
+}
+
+header nav ul{
+  width: 70%;
+  list-style-type: none;
+}
+
+header nav ul li{
+  width: 15%;
+  padding: 0 15px;
+}
+
+main section{
+  height: 400px;
+  width: 40%;
+  margin-left:7%;
+}
+
+main section form{
+  height: 30px;
+}
+
+main section form input{
+  width: 60%;
+  float: left;
+  padding: 7px;
+}
+
+main section form input:nth-child(2){
+  width: 20%;
+}
+
+main section ul{
+  list-style: none;
+  width: 50%;
+  height: 20px;
+  clear: both;
+  padding: 0;
+  margin-top:5%;
+}
+
+main section ul li{
+  float: left;
+  width: 23.33%;
+  margin-right: 10%;
+}
+
+.about-us{
+  width: 50%;
+  padding-right:20%;
+  height: 400px;
+  margin-left: auto;
+}
+
+.ordering-page > section:first-child{
+  height: 135px;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.ordering-page section:first-child ul{
+  width: 70%;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+
+.ordering-page section:first-child ul li{
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.menu{
+  max-width: 100%;
+
+  height: 200px;
+}
+
+.menu section{
+  width: 13%;
+  float: left;
+  margin: 0 5%;
+}
+
+.menu section > *{
+  display: block;
+}
+.menu img:first-of-type{
+  height: 150px;
+}
+
+.menu section > *:not(img:first-child){
+  width: 70%;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  top:-120px;
+  right: -50px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.main-img{
+  background: url("11002.jpg");
+}
+
+header, main{
+  color: white;
+}
+
+header > *{
+  font-size: 1.5rem;
+}
+
+main h1{
+  font-size: 5rem;
+}
+
+main section ul li{
+  font-size: 1.5rem;
+
+}
+
+.about-us h2{
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.about-us h4,
+.ordering-page h4{
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 1%;
+}
+
+.about-us p{
+  font-size: 1.5rem;
+}
+
+.about-us a,
+main form input:last-child{
+  display: inline-block;
+  border: 1px solid orange;
+  border-radius: 3px;
+  color: white;
+  background-color: orange;
+  padding: 1.5%;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+}
+
+.ordering-page h2{
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+.ordering-page ul{
+  height: 20px;
+}
