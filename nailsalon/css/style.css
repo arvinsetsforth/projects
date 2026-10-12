@@ -46,7 +46,7 @@ header nav > *{
 
 header nav ul{
   list-style-type: none;
-  width: 50%;
+  width: 55%;
 }
 
 header nav ul li{
@@ -73,8 +73,8 @@ main{
 
 aside{
   width: 15%;
-  height: 135px;
-  padding: 5px;
+  height: 170px;
+  padding: 10px;
   background-color: black;
   color: white;
 }
@@ -173,11 +173,27 @@ aside{
 .look-book .small{
   height: 200px;
 }
+.transform-this{
 
-main span{
+  display: inline-block;
 
-  transform: rotate(90);
+  transform: rotate(90deg);
+  position: relative;
+  left: 80%;
+  top: 30%;
 }
+
+body >div {
+  background: url("istockphoto-1356028968-1024x1024.jpg");
+}
+
+.coupon{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+
 /********************
 **********************
 /* ADDITIONAL STYLES
